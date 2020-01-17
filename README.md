@@ -56,7 +56,3 @@ Projeto criado na Semana OmniStack 9.0 da [Rocketseat](https://rocketseat.com.br
 |   └── yarn.lock           (arquivo de cache do yarn)
 └── README.md
 ```
-
-## Alterações do projeto original
-- Utilização do babel para atualizar a versão do ECMAScript
-- Utilização do arquivo `.env` para salvar as variáveis de ambiente através do pacote `dotenv`
