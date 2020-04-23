@@ -12,7 +12,7 @@ const app = express();
 const server = http.Server(app);
 const io = socketio(server);
 
-mongoose.connect('mongodb+srv://admin:admin@omnistack09-4n2qz.mongodb.net/omnistack9?retryWrites=true&w=majority', {
+mongoose.connect('url mongo, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
@@ -30,11 +30,6 @@ app.use((req, res, next) => {
 
     return next();
 })
-
-// GET, POST, PUT, DELETE
-// req.query = Acessar query params
-// req.params = Acessar route params (para edição, delete)
-// req.body = Acessar corpo da requisição (para criação, edição)
 
 app.use(cors());
 app.use(express.json());
